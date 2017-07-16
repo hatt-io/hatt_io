@@ -37,7 +37,7 @@ X_FRAME_OPTIONS = "DENY"
 # DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'hattio.pythonanywhere.com']
 
 # Application definition
 
