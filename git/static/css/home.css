@@ -1,0 +1,177 @@
+.flex-container{
+    z-index:-1;
+    display: flex;
+    webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    font-weight: bold;
+}
+
+.flex-container > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 5rem;
+    min-height: 100%;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+h1 a {
+    color: #FCA205;
+    font-family: 'Nunito', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin:0;
+  background-color:#FCA205;
+}
+ul li {
+    float: left;
+    list-style-type: none;
+    margin: 0 6px;
+    background-color:#FCA205;
+
+}
+ul a {
+    line-height: 120%;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color:#FCA205;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size:30px;
+    line-height: 120%;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.active {
+    background-color: #555;
+    color: black;
+}
+
+.navbar_top {
+    float: right;
+    position: relative;
+    right: -40%; /* or right 50% */
+    margin: 0px 0 0px;
+}
+
+.navbar_top > .child {
+  position: relative;
+  right: 50%;
+}
+
+.clear {
+  clear:both;
+}
+
+.side-nav-1, .side-nav-2 {
+    min-height:100%;
+    background-color:#FCA205;
+    width:40em;
+    z-index:1;
+    border-radius:10px;
+}
+.side-nav-1{
+    margin-right:auto;
+    -webkit-border-radius: 10px 0 0 0;
+    border-radius: 0 10px 0 0;
+
+}
+.side-nav-2{
+    margin-left:auto;
+    -webkit-border-radius: 0 10px 0 0;
+    border-radius: 10px 0 0 0;
+}
+
+.main {
+    margin-top:1em;
+    flex:1 150%;
+}
+
+.date {
+    color: #828282;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+
+.post {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align:center;
+}
+
+.post h1 a, .post h1 a:visited {
+    color: #000000;
+}
+
+#container {
+  width: 60em;
+  margin: auto;
+  margin-bottom:0;
+  background-color:#FCA205;
+  padding-left:3em;
+  padding-right:3em;
+}
+
+.hatt_io{
+    width:auto;
+    float:left;
+    margin-left:1em;
+    font-size:40px;
+    color: #FCA205;
+    text-decoration:none;
+    z-index:1;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: right;
+    z-index:1;
+}
+
+@media all {
+  .side-nav-1   { order: 0; }
+  .main         { order: 1; }
+  .side-nav-2   { order: 2; }
+}

@@ -1,0 +1,43 @@
+{% load static %}
+<html>
+    <head>
+        <title>Hatt.io</title>
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    </head>
+    <body>            <header class="header">
+                <a class="hatt_io" href="/">Hatt:io
+                </a>
+                <section id="container">
+                    <div class="navbar_top">
+                        <ul class="child">
+                            <li><a href="/thinkings">Thinkings</a></li>
+                            <li><a href="/about">About Me</a></li>
+                            <li><a href="/contact">Contact Info</a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </section>
+            </header>
+
+        <div class="flex-container">
+
+            <aside class="side-nav-1"></aside>
+
+
+            <article class="main">
+                {% block content %}
+                {% endblock %}
+            </article>
+
+
+            <aside class="side-nav-2"></aside>
+
+
+        </div>
+
+    <div class="footer">Design by <strong>Christopher Hatt</strong> 2017.
+    </div>
+</body>
+</html>
